@@ -79,7 +79,7 @@ namespace ArrangeOffice
         {
 
             form.send("EXE\tCHANGE_RECIPE\t"+bucket+"\t"+number+"<END>");
-          
+          //  Console.WriteLine("EXE\tCHANGE_RECIPE\t" + bucket + "\t" + number + "<END>");
         }
 
         public void pushBucket(string str) 

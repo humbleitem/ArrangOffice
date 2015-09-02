@@ -247,14 +247,6 @@ namespace ArrangeOffice
 
         }
 
-        public void directRecipe() 
-        {
-            
-        
-        
-        }
-
-
         public void modifyRecipeRow(string unit)
         {
             dataTableRecipe.Rows[add_RecipeDatagridview.CurrentRow.Index][3] = unit;
@@ -582,42 +574,47 @@ namespace ArrangeOffice
                         //update same store
                         if (controlNumer == control.showControl())
                         {
-
+                            
                             if (control.showControl() % 2 == 0)
                             {
-                                //delete material number same with new update
-                                string query = "物料編號 = '" + content[0] + "'";
-                                DataRow[] dataRow = dataTableReserve.Select(query);
-                                // find the row  not find no remove
-                                if (dataRow.Length > 0)
+                                //control = 10
+                                if (control.showControl() == 10) 
                                 {
-                                    dataTableReserve.Rows.Remove(dataRow[0]);
+                                    showSHReserve(content);                            
                                 }
+                                //control = 20
+                                if (control.showControl() == 20)
+                                {
+                                    showDirectRecipe(content);
+                                }
+                                else
+                                {
+                                    //delete material number same with new update
+                                    string query = "物料編號 = '" + content[0] + "'";
+                                    DataRow[] dataRow = dataTableReserve.Select(query);
+                                    // find the row  not find no remove
+                                    if (dataRow.Length > 0)
+                                    {
+                                        dataTableReserve.Rows.Remove(dataRow[0]);
+                                    }
 
-                                //add row on top
-                                rowReserve = dataTableReserve.NewRow();
-                                rowReserve.ItemArray = content;
-                                dataTableReserve.Rows.InsertAt(rowReserve, 0);
+                                    //add row on top
+                                    rowReserve = dataTableReserve.NewRow();
+                                    rowReserve.ItemArray = content;
+                                    dataTableReserve.Rows.InsertAt(rowReserve, 0);
 
 
 
 
-                                //dataTable = showMessage
-                                WH_REC_dataGridView.DataSource = dataTableReserve;
-                                adjustDataGridView(WH_REC_dataGridView);
-                                WH_REC_dataGridView.Show();
-
+                                    //dataTable = showMessage
+                                    WH_REC_dataGridView.DataSource = dataTableReserve;
+                                    adjustDataGridView(WH_REC_dataGridView);
+                                    WH_REC_dataGridView.Show();
+                                }
                             }
                             //reserve
                             else
                             {
-                                //control = 20
-                                if (control.showControl() == 20) 
-                                {
-                                    showDirectRecipe(content);
-                                
-                                }
-
                                 //add top
                                 rowLog = dataTableLog.NewRow();
                                 rowLog.ItemArray = content;
@@ -732,7 +729,7 @@ namespace ArrangeOffice
                         //control = 21;
                         else if (control.showControl() < 23)
                         {
-                            directRecipeName(content, true);
+                            directRecipeName(content);
                         }
 
 
@@ -1322,10 +1319,11 @@ namespace ArrangeOffice
 
             
             ACName.Insert(0, str[0], str[1]);
-
+            
             //plus last one
             if (end)
             {
+                ACName.Insert(ACName.Count, "0", "未指定");
                 BucketComBoBox_1.DataSource = new BindingSource(ACName, null);
                 BucketComBoBox_1.DisplayMember = "value";
                 BucketComBoBox_1.ValueMember = "key";

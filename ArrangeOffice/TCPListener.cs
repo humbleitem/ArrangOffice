@@ -259,7 +259,7 @@ namespace ArrangeOffice
                     break;
                 case "UPDATE_RECIPE_NOW":
                     decStr = handleString.handlestring(decStr);
-                    form.showHW(true, decStr, 21);
+                    form.showHW(true, decStr, 20);
                     break;
                 case "EXE_NOT_ONLINE":
 

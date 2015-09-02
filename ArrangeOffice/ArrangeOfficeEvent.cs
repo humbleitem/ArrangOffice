@@ -787,6 +787,7 @@ namespace ArrangeOffice
 
         private void confirmDirectButton_1_Click(object sender, EventArgs e)
         {
+            control.changControl("directRecipe");
             Confirm_RecipeForm directSpiceForm = new Confirm_RecipeForm();
             directSpiceForm.pushMainForm(this);
             directSpiceForm.StartPosition = FormStartPosition.CenterScreen;
@@ -801,91 +802,98 @@ namespace ArrangeOffice
 
         private void confirmDirectButton_2_Click(object sender, EventArgs e)
         {
+            control.changControl("directRecipe");
             Confirm_RecipeForm directSpiceForm = new Confirm_RecipeForm();
             directSpiceForm.pushMainForm(this);
             directSpiceForm.StartPosition = FormStartPosition.CenterScreen;
             directSpiceForm.changControl("directRecipe");
 
-            directSpiceForm.pushLabel(BucketComBoBox_1.Text
-                                     , BucketComBoBox_1.SelectedValue.ToString());
+            directSpiceForm.pushLabel(BucketComBoBox_2.Text
+                                     , BucketComBoBox_2.SelectedValue.ToString());
             directSpiceForm.pushBucket("2");
             directSpiceForm.ShowDialog();
         }
 
         private void confirmDirectButton_3_Click(object sender, EventArgs e)
         {
+            control.changControl("directRecipe");
             Confirm_RecipeForm directSpiceForm = new Confirm_RecipeForm();
             directSpiceForm.pushMainForm(this);
             directSpiceForm.StartPosition = FormStartPosition.CenterScreen;
             directSpiceForm.changControl("directRecipe");
 
-            directSpiceForm.pushLabel(BucketComBoBox_1.Text
-                                     , BucketComBoBox_1.SelectedValue.ToString());
+            directSpiceForm.pushLabel(BucketComBoBox_3.Text
+                                     , BucketComBoBox_3.SelectedValue.ToString());
             directSpiceForm.pushBucket("3");
             directSpiceForm.ShowDialog();
         }
 
         private void confirmDirectButton_4_Click(object sender, EventArgs e)
         {
+            control.changControl("directRecipe");
             Confirm_RecipeForm directSpiceForm = new Confirm_RecipeForm();
             directSpiceForm.pushMainForm(this);
             directSpiceForm.StartPosition = FormStartPosition.CenterScreen;
             directSpiceForm.changControl("directRecipe");
 
-            directSpiceForm.pushLabel(BucketComBoBox_1.Text
-                                     , BucketComBoBox_1.SelectedValue.ToString());
+            directSpiceForm.pushLabel(BucketComBoBox_4.Text
+                                     , BucketComBoBox_4.SelectedValue.ToString());
             directSpiceForm.pushBucket("4");
             directSpiceForm.ShowDialog();
         }
 
         private void confirmDirectButton_5_Click(object sender, EventArgs e)
         {
+            control.changControl("directRecipe");
             Confirm_RecipeForm directSpiceForm = new Confirm_RecipeForm();
             directSpiceForm.pushMainForm(this);
             directSpiceForm.StartPosition = FormStartPosition.CenterScreen;
             directSpiceForm.changControl("directRecipe");
 
-            directSpiceForm.pushLabel(BucketComBoBox_1.Text
-                                     , BucketComBoBox_1.SelectedValue.ToString());
+            directSpiceForm.pushLabel(BucketComBoBox_5.Text
+                                     , BucketComBoBox_5.SelectedValue.ToString());
             directSpiceForm.pushBucket("5");
             directSpiceForm.ShowDialog();
         }
 
         private void confirmDirectButton_6_Click(object sender, EventArgs e)
         {
+            control.changControl("directRecipe");
             Confirm_RecipeForm directSpiceForm = new Confirm_RecipeForm();
             directSpiceForm.pushMainForm(this);
             directSpiceForm.StartPosition = FormStartPosition.CenterScreen;
             directSpiceForm.changControl("directRecipe");
 
-            directSpiceForm.pushLabel(BucketComBoBox_1.Text
-                                     , BucketComBoBox_1.SelectedValue.ToString());
+            directSpiceForm.pushLabel(BucketComBoBox_6.Text
+                                     , BucketComBoBox_6.SelectedValue.ToString());
             directSpiceForm.pushBucket("6");
             directSpiceForm.ShowDialog();
         }
 
         private void confirmDirectButton_7_Click(object sender, EventArgs e)
         {
+            control.changControl("directRecipe");
             Confirm_RecipeForm directSpiceForm = new Confirm_RecipeForm();
             directSpiceForm.pushMainForm(this);
             directSpiceForm.StartPosition = FormStartPosition.CenterScreen;
             directSpiceForm.changControl("directRecipe");
 
-            directSpiceForm.pushLabel(BucketComBoBox_1.Text
-                                     , BucketComBoBox_1.SelectedValue.ToString());
+            directSpiceForm.pushLabel(BucketComBoBox_7.Text
+                                     , BucketComBoBox_7.SelectedValue.ToString());
             directSpiceForm.pushBucket("7");
             directSpiceForm.ShowDialog();
         }
 
         private void confirmDirectButton_8_Click(object sender, EventArgs e)
         {
+            control.changControl("directRecipe");
             Confirm_RecipeForm directSpiceForm = new Confirm_RecipeForm();
             directSpiceForm.pushMainForm(this);
             directSpiceForm.StartPosition = FormStartPosition.CenterScreen;
             directSpiceForm.changControl("directRecipe");
 
-            directSpiceForm.pushLabel(BucketComBoBox_1.Text
-                                     , BucketComBoBox_1.SelectedValue.ToString());
+            directSpiceForm.pushLabel(BucketComBoBox_8.Text
+                                     , BucketComBoBox_8.SelectedValue.ToString());
             directSpiceForm.pushBucket("8");
             directSpiceForm.ShowDialog();
         }
