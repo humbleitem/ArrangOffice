@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrangeOffice", "ArrangeOffice\ArrangeOffice.csproj", "{C8F419BD-9A5B-422B-81D7-6AA48F77FDF4}"
 EndProject
+Project("{840C416C-B8F3-42BC-B0DD-F6BB14C9F8CB}") = "ACSetup_advinst", "ACSetup_advinst\ACSetup_advinst.aiproj", "{4E34A272-9812-40C5-BF35-81DCD769EB32}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C8F419BD-9A5B-422B-81D7-6AA48F77FDF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8F419BD-9A5B-422B-81D7-6AA48F77FDF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8F419BD-9A5B-422B-81D7-6AA48F77FDF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E34A272-9812-40C5-BF35-81DCD769EB32}.Debug|Any CPU.ActiveCfg = All
+		{4E34A272-9812-40C5-BF35-81DCD769EB32}.Debug|Any CPU.Build.0 = All
+		{4E34A272-9812-40C5-BF35-81DCD769EB32}.Release|Any CPU.ActiveCfg = All
+		{4E34A272-9812-40C5-BF35-81DCD769EB32}.Release|Any CPU.Build.0 = All
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
